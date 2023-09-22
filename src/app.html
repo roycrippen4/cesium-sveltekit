@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Cesium App in SvelteKit</title>
+		%sveltekit.head%
+	</head>
+	<body data-theme="skeleton">
+		<script lang="ts">
+			window['CESIUM_BASE_URL'] = 'cesium_build';
+		</script>
+		<div class="h-full overflow-hidden contents">%sveltekit.body%</div>
+	</body>
+</html>
